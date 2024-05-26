@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 python:3.7-alpine
+FROM --platform=linux/amd64 python:3.7-alpine
 FROM amazoncorretto:11-alpine3.19 as builder
 ARG MSVC_NAME=msvc-gateway
 WORKDIR /app/$MSVC_NAME
